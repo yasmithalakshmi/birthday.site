@@ -13,13 +13,26 @@
 <button onclick="reveal()">Click Me 👀</button>
 
   <p id="message">
-    It’s been more than 8 years…<br><br>
+    It's been more than 8 years…<br><br>
     You understand me better than anyone.<br>
     You make me happy in seconds.<br><br>
-    You’re not just my best friend…<br>
-    You’re my comfort place 💫
+    You're not just my best friend…<br>
+    You're my comfort place 💫
   </p>
 </div>
+
+<script>
+  function reveal() {
+    const message = document.getElementById('message');
+    const audio = document.getElementById('bgMusic');
+    
+    // Show the message
+    message.style.display = 'block';
+    
+    // Play the background music
+    audio.play();
+  }
+</script>
 
 </body>
 </html>
